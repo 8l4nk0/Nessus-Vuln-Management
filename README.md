@@ -9,10 +9,8 @@ VULNERABILITY MANAGEMENT: Essenzialmente, consiste nel cercare e trovare costant
 - VM Windows 10<br>
 - Virtual Box<br>
 
-Activation Code: XXXXXXXXXXXXXXXXXXXXXX<br>
 Una volta installato Nessus si apre una scheda nel browser per connettersici tramite SSL: http://localhost:8834/WelcomeToNessus-Install/welcome<br>
-
-
+Ricordatevi le credenziali di Nessus dato che la sessione si chiude automaticamente dopo circa 20-30 minuti.
 Installazione ISO di Windows avanzata senza Product Key.<br>
 Impostate username e password della VM facilmente ricordabili perché ci serviranno dopo.<br><br>
 
