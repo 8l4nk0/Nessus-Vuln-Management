@@ -1,8 +1,7 @@
 # Nessus-Vuln-Management<br>
 Vulnerability Management with Nessus<br><br>
 
-VULNERABILITY MANAGEMENT<br>
-Essenzialmente, consiste nel cercare e trovare costantemente vulnerabilità all'interno del software, OS, ... per ridurne l'impatto ai minimi.<br><br>
+VULNERABILITY MANAGEMENT: Essenzialmente, consiste nel cercare e trovare costantemente vulnerabilità all'interno del software, OS, ... per ridurne l'impatto ai minimi.<br><br>
 
 
 <h2>Requisiti</h2><br>
@@ -24,6 +23,7 @@ Cerchiamo sulla barra di ricerca di Windows wfs.msc per accedere alle impostazio
 Creiamo un nuovo scan di nome "Windows 10 Single Host" su Nessus di tipo Network Scan inserendo nel campo Target l'ip della VM, IP_VM.<br>
 In questo caso andremo a fare uno scan manuale, ma questo può essere automatizzato nella sezione Schedule.<br>
 Lo scan verrà effettuato sulle porte più comuni.<br><br>
+![ping IP_VM -t](https://github.com/user-attachments/assets/8a65e15f-528c-4b9c-a141-f8800d2c5dae)
 
 <h2>Fase 2)</h2><br>
 Eseguiamo lo scan e aspettiamo che termini (Se non trovate nulla, provate a vedere se avete lasciato il ping in esecuzione e fermatelo).<br>
