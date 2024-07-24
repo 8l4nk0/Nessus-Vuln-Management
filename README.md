@@ -53,7 +53,7 @@ Con lo scan con credenziali, troveremo molte più vulnerabilità, alcune delle q
 Prima di andare a risolverle, installiamo sulla VM una vecchia versione di Firefox così da poterne
 riscontrare le vulnerabilità con Nessus.<br><br>
 
-![Network Scan with Credentials](https://github.com/user-attachments/assets/449b5c72-7790-4667-b3ee-d22bc9dba7d3)<br><br>
+![Network Scan with Credentials](https://github.com/user-attachments/assets/5f02dca0-d136-4903-8924-bf4eef85169f)<br><br>
 
 
 <h2>Fase 5)</h2><br>
@@ -75,7 +75,7 @@ Ora passiamo alla fase di Remediation, ossia proviamo a risolverle.<br>
 Nessus ci offre una sezione apposita chiamata appunto Remediations dove ci fornisce una soluzione generale per la maggior parte delle vulnerabilità invece che andare ad aprirle una ad una e vedere le possibili soluzioni.<br>
 Nel caso di Firefox, come è ovvio che sia, ci basta aggiornarlo all'ultima versione o ancora meglio, disinstallarlo.<br><br>
 
-![Network Scan with Credentials and Old Firefox](https://github.com/user-attachments/assets/7227f9e1-8b4e-4641-a9c1-fcb4a885755b)<br><br>
+![Network Scan with Credentials and Old Firefox](https://github.com/user-attachments/assets/b9b372a6-a363-4db6-a31d-a03835a1ed49)<br><br>
 ![Vulnerabilites with Old Firefox](https://github.com/user-attachments/assets/e667c96c-15e2-4f39-bd3f-415c25727eae)<br><br>
 ![Remediations for Vulnerabilities with Old Firefox](https://github.com/user-attachments/assets/9cb7845a-d8db-495d-b4c9-47ce424c4362)<br><br>
 
@@ -86,7 +86,7 @@ Nelle impostazioni della VM cerchiamo ed eseguiamo Windows Update fin quando non
 Infine riavviamo la VM per sicurezza.<br>
 Eseguiamo nuovamente lo scan con Nessus e confrontiamo con i due precedenti scan.<br><br>
 
-![Network Scan with Credentials and Uninstalled Old Firefox and Updated Windows](https://github.com/user-attachments/assets/24f4084f-b5b2-4cf8-866c-a295d371d026)<br><br>
+![Network Scan with Credentials and Uninstalled Old Firefox and Updated Windows](https://github.com/user-attachments/assets/8626dac9-f41d-4381-a8c4-db7654efe93a)<br><br>
 ![Vulnerabilities without Old Firefox and Updated Windows](https://github.com/user-attachments/assets/dbaefe63-f32c-41c3-b51b-f7614ccce71c)<br><br>
 
 Una vulnerabilità che sembra permanere dopo tutti questi passaggi è legata alla presenza di Internet Explorere nel sistema operativo aggiornato.<br>
