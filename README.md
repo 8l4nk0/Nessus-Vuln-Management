@@ -21,6 +21,7 @@ Cerchiamo sulla barra di ricerca di Windows wfs.msc per accedere alle impostazio
 Creiamo un nuovo scan di nome "Windows 10 Single Host" su Nessus di tipo Network Scan inserendo nel campo Target l'ip della VM, IP_VM.<br>
 In questo caso andremo a fare uno scan manuale, ma questo può essere automatizzato nella sezione Schedule.<br>
 Lo scan verrà effettuato sulle porte più comuni.<br>
+
 ![ping IP_VM -t](https://github.com/user-attachments/assets/65e0cb09-6db5-4501-8e91-442c60bfcb7c)<br>
 
 <h2>Fase 2)</h2><br>
