@@ -20,13 +20,15 @@ Disattiviamo il firewall sulla VM windows così che sia rintracciabile sulla ret
 Cerchiamo sulla barra di ricerca di Windows wfs.msc per accedere alle impostazioni del Firewall e disattiviamolo sia nel campo dominio, pubblico e privato.<br>
 Creiamo un nuovo scan di nome "Windows 10 Single Host" su Nessus di tipo Network Scan inserendo nel campo Target l'ip della VM, IP_VM.<br>
 In questo caso andremo a fare uno scan manuale, ma questo può essere automatizzato nella sezione Schedule.<br>
-Lo scan verrà effettuato sulle porte più comuni.<br>
+Lo scan verrà effettuato sulle porte più comuni.<br><br>
 
-![ping IP_VM -t](https://github.com/user-attachments/assets/65e0cb09-6db5-4501-8e91-442c60bfcb7c)<br>
+![ping IP_VM -t](https://github.com/user-attachments/assets/65e0cb09-6db5-4501-8e91-442c60bfcb7c)<br><br>
 
 <h2>Fase 2)</h2><br>
-Eseguiamo lo scan e aspettiamo che termini (Se non trovate nulla, provate a vedere se avete lasciato il ping in esecuzione e fermatelo).<br>
-Senza aver abilitato la VM per accesso con SMB e senza aver fornito a Nessus le credenziali per accedere alla VM, i risultati di questo scan saranno basilari.<br><br>
+Eseguiamo lo scan e aspettiamo che termini (Se non trovate nulla, provate a vedere se avete lasciato il ping in esecuzione e fermatelo).<br><br>
+Senza aver abilitato la VM per accesso con SMB e senza aver fornito a Nessus le credenziali per accedere alla VM, i risultati di questo scan saranno basilari.<br>
+
+![Basic Network Scan without credentials](https://github.com/user-attachments/assets/507ff883-b619-4c89-954d-811368e01be0)<br>
 
 <h2>Fase 3)</h2><br>
 Sulla barra di ricerca Windows, cerchiamo "services.msc".<br>
@@ -51,6 +53,8 @@ Con lo scan con credenziali, troveremo molte più vulnerabilità, alcune delle q
 Prima di andare a risolverle, installiamo sulla VM una vecchia versione di Firefox così da poterne
 riscontrare le vulnerabilità con Nessus.<br><br>
 
+![Network Scan with Credentials](https://github.com/user-attachments/assets/449b5c72-7790-4667-b3ee-d22bc9dba7d3)<br><br>
+
 
 <h2>Fase 5)</h2><br>
 Sulla VM, cerchiamo su Internet "download old firefox" e clicchiamo sul sito support.mozilla.org.<br>
@@ -71,11 +75,18 @@ Ora passiamo alla fase di Remediation, ossia proviamo a risolverle.<br>
 Nessus ci offre una sezione apposita chiamata appunto Remediations dove ci fornisce una soluzione generale per la maggior parte delle vulnerabilità invece che andare ad aprirle una ad una e vedere le possibili soluzioni.<br>
 Nel caso di Firefox, come è ovvio che sia, ci basta aggiornarlo all'ultima versione o ancora meglio, disinstallarlo.<br><br>
 
+![Network Scan with Credentials and Old Firefox](https://github.com/user-attachments/assets/7227f9e1-8b4e-4641-a9c1-fcb4a885755b)<br><br>
+![Vulnerabilites with Old Firefox](https://github.com/user-attachments/assets/e667c96c-15e2-4f39-bd3f-415c25727eae)<br><br>
+![Remediations for Vulnerabilities with Old Firefox](https://github.com/user-attachments/assets/9cb7845a-d8db-495d-b4c9-47ce424c4362)<br><br>
+
 
 <h2>Fase 7)</h2><br>
 Nella VM cerchiamo appwiz.cpl per disinstallare Firefox.<br>
 Nelle impostazioni della VM cerchiamo ed eseguiamo Windows Update fin quando non rimangono più vulnerabilità evidenti. Ogni volta clicchiamo su "cerca nuovi aggiornamenti" e se ci sono, clicchiamoli e riavviamo la VM.<br>
 Infine riavviamo la VM per sicurezza.<br>
-Eseguiamo nuovamente lo scan con Nessus e confrontiamo con i due precedenti scan.<br>
+Eseguiamo nuovamente lo scan con Nessus e confrontiamo con i due precedenti scan.<br><br>
 
+![Network Scan with Credentials and Uninstalled Old Firefox and Updated Windows](https://github.com/user-attachments/assets/24f4084f-b5b2-4cf8-866c-a295d371d026)<br><br>
+![Vulnerabilities without Old Firefox and Updated Windows](https://github.com/user-attachments/assets/dbaefe63-f32c-41c3-b51b-f7614ccce71c)<br><br>
 
+Una vulnerabilità che sembra permanere dopo tutti questi passaggi è legata alla presenza di Internet Explorere nel sistema operativo aggiornato.<br>
