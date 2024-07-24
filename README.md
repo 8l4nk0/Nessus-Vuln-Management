@@ -10,8 +10,8 @@ Essenzialmente, consiste nel cercare e trovare costantemente vulnerabilità all'
 - VM Windows 10<br>
 - Virtual Box<br>
 
-Activation Code: A3FX-E7Q3-34DG-9TC8-ZCRN
-Una volta installato Nessus si apre una scheda nel browser per connettersici tramite SSL: http://localhost:8834/WelcomeToNessus-Install/welcome
+Activation Code: XXXXXXXXXXXXXXXXXXXXXX<br>
+Una volta installato Nessus si apre una scheda nel browser per connettersici tramite SSL: http://localhost:8834/WelcomeToNessus-Install/welcome<br>
 
 
 Installazione ISO di Windows avanzata senza Product Key.<br>
