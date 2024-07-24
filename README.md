@@ -28,7 +28,7 @@ Lo scan verrà effettuato sulle porte più comuni.<br><br>
 Eseguiamo lo scan e aspettiamo che termini (Se non trovate nulla, provate a vedere se avete lasciato il ping in esecuzione e fermatelo).<br><br>
 Senza aver abilitato la VM per accesso con SMB e senza aver fornito a Nessus le credenziali per accedere alla VM, i risultati di questo scan saranno basilari.<br>
 
-![Basic Network Scan without credentials](https://github.com/user-attachments/assets/507ff883-b619-4c89-954d-811368e01be0)<br>
+![Basic Network Scan without credentials](https://github.com/user-attachments/assets/fcb387bf-819b-48e6-911a-94a7fd542c26)<br>
 
 <h2>Fase 3)</h2><br>
 Sulla barra di ricerca Windows, cerchiamo "services.msc".<br>
